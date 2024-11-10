@@ -1,0 +1,263 @@
+/* Reset Styles */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.8; /* Tăng khoảng cách giữa các dòng */
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+
+.header .close-btn {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.trial-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.trial-btn:hover {
+    background-color: #2980b9;
+}
+
+.profile-icon {
+    background-color: white;
+    color: #2c3e50;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/* Search Bar */
+.search-bar {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    width: 92%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Tabs Navigation */
+.tabs {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #555;
+    background-color: #eaeaea;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.tab:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+.tab.active {
+    background-color: #3498db;
+    color: white;
+}
+
+/* Content Sections */
+.content-section {
+    display: none;
+}
+
+.content-section.active {
+    display: block;
+}
+
+.content-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.content-section h3 {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #555;
+}
+
+.content-section p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.content-section ul {
+    margin-top: 10px;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.content-section ul li {
+    margin-bottom: 8px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 10px;
+    margin-top: 40px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-column h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #3498db;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+    margin-top: 10px; 
+}
+
+.social-links li {
+    list-style: none; /* Loại bỏ kiểu danh sách */
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+    display: block; 
+    margin: 0 auto; 
+}
+
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+}
+.tabs {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    overflow-x: auto; 
+    white-space: nowrap;
+    padding: 10px 0; 
+}
+
+.tab {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #555;
+    background-color: #eaeaea;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+.tab:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+.tab.active {
+    background-color: #3498db;
+    color: white;
+}
+
+.tabs::-webkit-scrollbar {
+    height: 8px;
+}
+
+.tabs::-webkit-scrollbar-thumb {
+    background: #3498db;
+    border-radius: 10px;
+}
+
+.tabs::-webkit-scrollbar-thumb:hover {
+    background: #2980b9;
+}
+
+.tabs::-webkit-scrollbar-track {
+    background: #eaeaea;
+}
