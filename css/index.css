@@ -24,13 +24,13 @@ body {
     padding: 20px;
     display: flex;
     align-items: start; 
-    justify-content: center;
+    justify-content:  flex-start;
     gap: 10px;
 }
 
 .app-logo {
-    width: 40px; /* Adjust logo width */
-    height: auto; /* Maintain aspect ratio */
+    width: 40px; 
+    height: auto;
 }
 
 .header h1 {
