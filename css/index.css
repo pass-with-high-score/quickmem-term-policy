@@ -18,25 +18,30 @@ body {
     min-height: 100vh;
 }
 
+/* Header styling */
 .header {
     background-color: #4a90e2;
     color: #fff;
-    padding: 20px;
+    padding: 15px 20px; 
+    padding-left: 10%;
     display: flex;
-    align-items: start; 
-    justify-content:  flex-start;
-    gap: 10px;
+    align-items: center; 
+    gap: 15px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); 
+    border-bottom: 3px solid #333;
 }
 
 .app-logo {
-    width: 40px; 
+    width: 50px;
     height: auto;
 }
 
 .header h1 {
-    font-size: 1.5em;
+    font-size: 1.8em;
     margin: 0;
+    font-weight: bold;
 }
+
 
 /* Content Section Styling */
 .content-section {
@@ -85,6 +90,7 @@ body {
     background-color: #333;
     color: #fff;
     padding: 20px 0;
+    margin-top: auto;
 }
 
 .footer-container {
@@ -100,6 +106,7 @@ body {
     flex: 1;
     min-width: 200px;
     margin-bottom: 20px;
+    text-align: center; /* Center align each column */
 }
 
 .footer-column h4 {
@@ -110,6 +117,7 @@ body {
 
 .footer-column ul {
     list-style: none;
+    padding: 0;
 }
 
 .footer-column ul li {
@@ -136,14 +144,31 @@ body {
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
     padding: 0;
-    margin: 0 auto;
+    margin: 10px auto;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background-color: #555;
+    border-radius: 50%;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.social-links a:hover {
+    background-color: #4a90e2;
 }
 
 .social-links img {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
 }
 
 /* Responsive Adjustments */
@@ -153,13 +178,22 @@ body {
         text-align: center;
     }
 
+    .footer-column {
+        width: 100%;
+    }
+
     .social-links {
         justify-content: center;
         margin-top: 10px;
     }
 
+    .social-links a {
+        width: 28px;
+        height: 28px;
+    }
+
     .social-links img {
-        width: 20px;
-        height: 20px;
+        width: 18px;
+        height: 18px;
     }
 }
